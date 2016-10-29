@@ -19,12 +19,12 @@ import commands
 import subprocess
 
 from argparse import ArgumentParser
-from caliper.client.shared.caliper_path import folder_ope as FOLDER
 try:
     import caliper.common as common
 except ImportError:
     import common
 
+from caliper.client.shared.caliper_path import folder_ope as FOLDER
 from caliper.server.build import build
 from caliper.server.run import test_run
 from caliper.server.run import write_results
